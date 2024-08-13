@@ -6,3 +6,6 @@
 
 /index.html
   Cache-Control: no-cache
+
+/css/*
+  X-Content-Type-Options: nosniff
