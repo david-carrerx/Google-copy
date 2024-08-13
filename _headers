@@ -1,11 +1,21 @@
 /*
-  Cache-Control: max-age=31536000, public
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
-/index.html
-  Cache-Control: no-cache
+/images/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:;
+  X-Content-Type-Options: nosniff
 
 /css/*
+  Content-Security-Policy: default-src 'self'; style-src 'self' https://trusted.cdn.com;
+  X-Content-Type-Options: nosniff
+
+/js/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com;
+  X-Content-Type-Options: nosniff
+
+/index.html
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
