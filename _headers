@@ -1,11 +1,11 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' https://trusted.cdn.com data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
 
 /images/*
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:;
+  Content-Security-Policy: default-src 'self'; img-src 'self' https://trusted.cdn.com data:;
   X-Content-Type-Options: nosniff
 
 /css/*
@@ -17,5 +17,5 @@
   X-Content-Type-Options: nosniff
 
 /index.html
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' https://trusted.cdn.com data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
