@@ -1,4 +1,5 @@
 /*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   Cache-Control: max-age=31536000, public
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
