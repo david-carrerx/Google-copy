@@ -1,36 +1,30 @@
 /*
-  Content-Security-Policy: default-src 'self'; 
-                           script-src 'self' https://trusted.cdn.com; 
-                           style-src 'self' https://trusted.cdn.com; 
-                           img-src 'self' https://trusted.cdn.com data:; 
-                           font-src 'self'; 
-                           connect-src 'self'; 
-                           frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' https://trusted.cdn.com data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
 
 /images/*
   Content-Security-Policy: img-src 'self' https://trusted.cdn.com data:;
-
   X-Content-Type-Options: nosniff
+  Cache-Control: max-age=31536000, immutable
 
 /css/*
   Content-Security-Policy: style-src 'self' https://trusted.cdn.com;
-
   X-Content-Type-Options: nosniff
+  Cache-Control: max-age=86400
 
 /js/*
   Content-Security-Policy: script-src 'self' https://trusted.cdn.com;
-
   X-Content-Type-Options: nosniff
+  Cache-Control: max-age=86400
 
 /index.html
-  Content-Security-Policy: default-src 'self'; 
-                           script-src 'self' https://trusted.cdn.com; 
-                           style-src 'self' https://trusted.cdn.com; 
-                           img-src 'self' https://trusted.cdn.com data:; 
-                           font-src 'self'; 
-                           connect-src 'self'; 
-                           frame-ancestors 'none';
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.cdn.com; style-src 'self' https://trusted.cdn.com; img-src 'self' https://trusted.cdn.com data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none';
   X-Content-Type-Options: nosniff
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
